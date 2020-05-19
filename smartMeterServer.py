@@ -5,6 +5,8 @@ import threading
 app = Flask(__name__)
 
 ser = serial.Serial('/dev/ttyS1', 9600)
+ser.close()
+ser.open()
 
 def get_data():
     while True:
