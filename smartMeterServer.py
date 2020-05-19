@@ -12,7 +12,7 @@ def get_data():
     while True:
         global x 
         x = ser.readline()
-
+        ser.write(x)
 thread = threading.Thread(target = get_data)
 thread.start()
 
