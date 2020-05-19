@@ -14,7 +14,7 @@ def get_data():
 thread = threading.Thread(target = get_data)
 thread.start()
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def homePage():
     return x
 
