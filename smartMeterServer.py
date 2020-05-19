@@ -4,7 +4,7 @@ import time
 import threading
 app = Flask(__name__)
 
-ser = serial.Serial('/dev/ttyS1', 9600)
+ser = serial.Serial('/dev/ttyS1', 115200)
 ser.close()
 ser.open()
 
